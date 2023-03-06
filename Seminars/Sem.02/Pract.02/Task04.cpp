@@ -79,12 +79,12 @@ void readPairFromFile(std::ifstream& sourceFile, const Relation& relation, unsig
 }
 int main()
 {
-	//pair newPair = CreatePair();
+	pair newPair = CreatePair();
 	Relation relation;
-	//addPairToRelation(newPair, relation);
-	//std::ofstream myFile;
-	//myFile.open("relation.txt", std::ios::app);
-	//writeRelationToFile(myFile, relation);
+	addPairToRelation(newPair, relation);
+	std::ofstream myFile;
+	myFile.open("relation.txt", std::ios::app);
+	writeRelationToFile(myFile, relation);
 	std::ifstream sourceFile;
 	sourceFile.open("relation.txt");
 	readPairFromFile(sourceFile, relation, 3);
